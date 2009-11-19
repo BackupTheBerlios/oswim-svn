@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+                             
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Information -->
+
+  <groupId>org.openswim</groupId>
+  <artifactId>openswim</artifactId>
+  <name>OpenSWIM</name>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <organization>
+    <name>OpenSWIM</name>
+    <url>http://www.openswim.org/</url>
+  </organization>
+
+  <url>https://developer.berlios.de/projects/openswim/</url>
+  <inceptionYear>2009</inceptionYear>
+  <description>
+    OpenSWIM is an open source implementation of swim tournament management system.
+  </description>
+
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:svn:http://svn.berlios.de/svnroot/repos/openswim/trunk</connection>
+    <developerConnection>scm:svn:https://developername@svn.berlios.de/svnroot/repos/openswim/trunk</developerConnection>
+    <url>https://svn.berlios.de/svnroot/repos/openswim/trunk/</url>
+  </scm>
+
+<!-- TODO
+  <issueManagement>
+    <system>Jira</system>
+    <url></url>
+  </issueManagement>
+-->
+
+  <mailingLists>
+    <mailingList>
+      <name>Project Mailing List</name>
+      <subscribe></subscribe>
+      <unsubscribe></unsubscribe>
+      <post>openswim-dev@lists.berlios.de</post>
+      <archive>https://lists.berlios.de/mailman/private/openswim-dev/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <developers>
+    <developer>
+      <name>Stephan Klevenz</name>
+      <id>klevenzs</id>
+      <roles>
+        <role>committer</role>
+      </roles>
+    </developer>
+  </developers>
+
+
+  <!-- Project Environment -->
+
+  <modules>
+    <module>openswim</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <!-- Java 1.6 -->
+      <plugin>
+        <inherited>true</inherited>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <target>1.6</target>
+          <source>1.6</source>
+		  <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <inherited>true</inherited>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.1</version>        
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <includePom>true</includePom>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <filtering>false</filtering>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+		  <workspace>.</workspace>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+     <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.1.1</version>
+     </dependency>
+    
+     <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.13</version>
+        <scope>test</scope>
+     </dependency>
+     <dependency>
+     	<groupId>junit</groupId>
+     	<artifactId>junit</artifactId>
+     	<version>4.7</version>
+     	<type>jar</type>
+     	<scope>test</scope>
+     </dependency>
+  </dependencies>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+		  <code>
+			javadoc:aggregate
+          </code>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+</project>
