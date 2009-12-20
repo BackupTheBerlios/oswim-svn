@@ -33,12 +33,6 @@
   </description>
 
   <contributors>
-  	<contributor>
-  		<name>Stephan Klevenz</name>
-  		<email>stephan@klaeff.de</email>
-  		<url>http://www.klaeff.de</url>
-  		<timezone>GMT</timezone>
-  	</contributor>
   </contributors>
   <licenses>
     <license>
@@ -72,6 +66,15 @@
   </mailingLists>
 
   <developers>
+  	<developer>
+  		<id>klevenzs</id>
+  		<name>Stephan Klevenz</name>
+  		<email>stephan@klaeff.de</email>
+  		<url>http://www.klaeff.de/www.klaeff.de/Impressum.html</url>
+  		<organization>KLÄFF-Soft</organization>
+  		<organizationUrl>http://www.klaeff.de</organizationUrl>
+  		<timezone>CET (UTC +1)</timezone>
+  	</developer>
   </developers>
 
 
@@ -169,5 +172,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <modules>
+  	<module>sandbox</module>
+  </modules>
 
 </project>
