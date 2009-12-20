@@ -21,11 +21,25 @@
   </organization>
 
   <url>https://developer.berlios.de/projects/openswim/</url>
+  <issueManagement>
+  	<system>BerliOS</system>
+  	<url>https://developer.berlios.de/bugs/?func=addbug&amp;group_id=11344</url>
+  </issueManagement>
+  <ciManagement>
+  </ciManagement>
   <inceptionYear>2009</inceptionYear>
   <description>
-    OpenSWIM is an open source implementation of swim tournament management system.
+    OpenSWIM is an open source implementation of a swim tournament management system.
   </description>
 
+  <contributors>
+  	<contributor>
+  		<name>Stephan Klevenz</name>
+  		<email>stephan@klaeff.de</email>
+  		<url>http://www.klaeff.de</url>
+  		<timezone>GMT</timezone>
+  	</contributor>
+  </contributors>
   <licenses>
     <license>
       <name>Apache 2</name>
@@ -58,21 +72,10 @@
   </mailingLists>
 
   <developers>
-    <developer>
-      <name>Stephan Klevenz</name>
-      <id>klevenzs</id>
-      <roles>
-        <role>committer</role>
-      </roles>
-    </developer>
   </developers>
 
 
   <!-- Project Environment -->
-
-  <modules>
-    <module>openswim</module>
-  </modules>
 
   <build>
     <plugins>
@@ -154,6 +157,11 @@
 			javadoc:aggregate
           </code>
         </configuration>
+      </plugin>
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-surefire-plugin</artifactId>
+      	<version>2.4.3</version>
       </plugin>
     </plugins>
   </reporting>
