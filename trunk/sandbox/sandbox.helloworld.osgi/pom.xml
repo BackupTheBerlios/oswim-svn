@@ -3,19 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>openswim</artifactId>
+    <artifactId>sandbox</artifactId>
     <groupId>org.openswim</groupId>
     <version>0.1-SNAPSHOT</version>
   </parent>
   <groupId>org.openswim</groupId>
-  <artifactId>sandbox</artifactId>
-  <packaging>pom</packaging>
-  <name>Sandbox</name>
+  <artifactId>sandbox.helloworld.osgi</artifactId>
+  <packaging>jar</packaging>
+  <name>Sandbox: Hello World OSGi</name>
   <version>0.1-SNAPSHOT</version>
   <dependencies>
    </dependencies>
-  <modules>
-  	<module>sandbox.helloworld</module>
-  	<module>sandbox.helloworld.osgi</module>
-  </modules>
 </project>
