@@ -29,7 +29,7 @@
   </ciManagement>
   <inceptionYear>2009</inceptionYear>
   <description>
-    OpenSWIM is an open source implementation of a swim tournament management system.
+    OpenSWIM is an open source implementation of a swim tournament management system. 
   </description>
 
   <contributors>
@@ -44,7 +44,7 @@
 
   <scm>
     <connection>scm:svn:http://svn.berlios.de/svnroot/repos/openswim/trunk</connection>
-    <developerConnection>scm:svn:https://developername@svn.berlios.de/svnroot/repos/openswim/trunk</developerConnection>
+    <developerConnection>scm:svn:https://developername@svn.berlios.de/svnroot/repos/openswim/trunk</developerConnection> 
     <url>https://svn.berlios.de/svnroot/repos/openswim/trunk/</url>
   </scm>
 
@@ -118,11 +118,17 @@
       </plugin>
       <plugin>
         <artifactId>maven-eclipse-plugin</artifactId>
+		  <version>2.7</version>
         <configuration>
           <downloadSources>true</downloadSources>
           <downloadJavadocs>true</downloadJavadocs>
 		  <workspace>.</workspace>
         </configuration>
+      </plugin>
+      <plugin>
+      	<groupId>org.sonatype.plugins</groupId>
+      	<artifactId>maven-version-plugin</artifactId>
+      	<version>1.0</version>
       </plugin>
     </plugins>
   </build>
