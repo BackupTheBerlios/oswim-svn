@@ -1,17 +1,42 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <artifactId>sandbox</artifactId>
-    <groupId>org.openswim</groupId>
-    <version>0.1-SNAPSHOT</version>
-  </parent>
-  <groupId>org.openswim</groupId>
-  <artifactId>sandbox.helloworld.osgi</artifactId>
-  <packaging>jar</packaging>
-  <name>Sandbox: Hello World OSGi</name>
-  <version>0.1-SNAPSHOT</version>
-  <dependencies>
-   </dependencies>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>sandbox</artifactId>
+		<groupId>org.openswim</groupId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.openswim</groupId>
+	<artifactId>sandbox.helloworld.osgi</artifactId>
+	<packaging>bundle</packaging>
+	<name>Sandbox: Hello World OSGi</name>
+	<version>0.1-SNAPSHOT</version>
+	<dependencies>
+	<dependency>
+    <groupId>org.osgi</groupId>
+    <artifactId>org.osgi.core</artifactId>
+    <version>4.2.0</version>
+</dependency> 
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+<!-- 
+						<Export-Package>org.foo.myproject.api</Export-Package>
+						<Private-Package>org.foo.myproject.*</Private-Package>
+	-->
+						<Bundle-Activator>org.openswim.sandbox.helloworld.osgi.Activator</Bundle-Activator>
+					</instructions>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 </project>
