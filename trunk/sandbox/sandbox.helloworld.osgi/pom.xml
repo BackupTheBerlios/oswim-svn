@@ -14,11 +14,11 @@
 	<name>Sandbox: Hello World OSGi</name>
 	<version>0.1-SNAPSHOT</version>
 	<dependencies>
-	<dependency>
-    <groupId>org.osgi</groupId>
-    <artifactId>org.osgi.core</artifactId>
-    <version>4.2.0</version>
-</dependency> 
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>4.2.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -28,15 +28,15 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-<!-- 
-						<Export-Package>org.foo.myproject.api</Export-Package>
-						<Private-Package>org.foo.myproject.*</Private-Package>
-	-->
+						<!--
+							<Export-Package>org.foo.myproject.api</Export-Package>
+							<Private-Package>org.foo.myproject.*</Private-Package>
+						-->
 						<Bundle-Activator>org.openswim.sandbox.helloworld.osgi.Activator</Bundle-Activator>
 					</instructions>
 				</configuration>
 			</plugin>
-
+			
 		</plugins>
 	</build>
 </project>

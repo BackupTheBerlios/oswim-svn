@@ -23,38 +23,38 @@
 	<publishDate position="right" />
 	<version position="left" />
 	<poweredBy>
-		<logo name="Klaeff" href="http://www.klaeff.de/"
-			img="images/klaeff.png" />
+		<logo name="Klaeff" href="http://www.klaeff.de/" img="images/klaeff.png" />
 	</poweredBy>
 	<bannerLeft>
-		<src>images/klaeff.png</src>
+		<src>images/schwimmer-100.jpg</src>
 	</bannerLeft>
 	<bannerRight>
-		<src>images/klaeff.png</src>
+		<src>images/schwimmer-100.jpg</src>
 	</bannerRight>
+	<!--
+		<skin> <groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-classic-skin</artifactId> <version>1.0</version>
+		</skin>
+	-->
 	<skin>
-		<groupId>org.apache.maven.skins</groupId>
-		<artifactId>maven-classic-skin</artifactId>
- 		<version>1.0</version> 
+		<groupId>org.apache.directory.skins</groupId>
+		<artifactId>apacheds-skin</artifactId>
+		<version>1.0.0</version>
 	</skin>
 
 	<body>
 <!-- 
-<breadcrumbs>
-      <item name="<ModuleName>" href="index.html" mce_href="index.html"/>
-    </breadcrumbs>
--->
-<menu ref="parent"/>
-
+		<breadcrumbs>
+			<item name="&gt;ModulName&gt;" href="index.html" mce_href="index.html"/>
+		</breadcrumbs>
+		<menu ref="parent" />
+ -->
 		<menu name="Overview">
 			<item name="Introduction" href="index.html" />
-			<item name="Goals" href="plugin-info.html" />
-			<item name="Usage" href="usage.html" />
-			<item name="FAQ" href="faq.html" />
 		</menu>
 
 		<menu ref="modules" />
-		<menu ref="reports"/>
+		<menu ref="reports" />
 
 
 	</body>

@@ -27,6 +27,7 @@ public class ActivatorTest {
 	@Test
 	public void stopActivation() throws Exception {
 		this.activator.start(this.ctx);
+		this.activator.stop(this.ctx);
 	}
 
 }
