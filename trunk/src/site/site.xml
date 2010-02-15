@@ -26,14 +26,18 @@
 		<logo name="Klaeff" href="http://www.klaeff.de/" img="images/klaeff.png" />
 	</poweredBy>
 	<bannerLeft>
+		<name>OpenSWIM</name>
 		<src>images/schwimmer-100.jpg</src>
+		<href>http:/www.klaeff.de/</href>
 	</bannerLeft>
 	<bannerRight>
 		<src>images/schwimmer-100.jpg</src>
 	</bannerRight>
-		<skin> <groupId>org.apache.maven.skins</groupId>
-		<artifactId>maven-classic-skin</artifactId> <version>1.0</version>
-		</skin>
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-application-skin</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</skin>
 
 	<body>
 <!-- 
