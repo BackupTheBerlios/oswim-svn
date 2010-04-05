@@ -22,17 +22,19 @@
 
 	<publishDate position="right" />
 	<version position="left" />
+
 	<poweredBy>
 		<logo name="Klaeff" href="http://www.klaeff.de/" img="images/klaeff.png" />
 	</poweredBy>
 	<bannerLeft>
 		<name>OpenSWIM</name>
 		<src>images/schwimmer-100.jpg</src>
-		<href>http:/www.klaeff.de/</href>
 	</bannerLeft>
 	<bannerRight>
+		<name>OpenSWIM</name>
 		<src>images/schwimmer-100.jpg</src>
 	</bannerRight>
+
 <!-- 
 	<skin>
 		<groupId>org.apache.maven.skins</groupId>
@@ -45,15 +47,15 @@
 		<breadcrumbs>
 			<item name="&gt;ModulName&gt;" href="index.html" mce_href="index.html"/>
 		</breadcrumbs>
-		<menu ref="parent" />
  -->
+		<menu ref="parent" />
+
 		<menu name="Overview">
 			<item name="Introduction" href="index.html" />
 		</menu>
 
 		<menu ref="modules" />
 		<menu ref="reports" />
-
 
 	</body>
 </project>
