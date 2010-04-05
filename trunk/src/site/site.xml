@@ -33,12 +33,13 @@
 	<bannerRight>
 		<src>images/schwimmer-100.jpg</src>
 	</bannerRight>
+<!-- 
 	<skin>
 		<groupId>org.apache.maven.skins</groupId>
 		<artifactId>maven-application-skin</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</skin>
-
+-->
 	<body>
 <!-- 
 		<breadcrumbs>
